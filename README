@@ -21,9 +21,4 @@
   * The Zend_Di component is not fully functional yet, but it should give you a good idea of what it does and how it works.
   * New classes: Zend_Di_Registry and Zend_Di_Parameter.
   
-
-[10-04-2007] Revision 0.5
-
-  * Component renamed from Zend_Di to Zend_Object
-  * Added Zend_Object_Container, Zend_Object_Builder and Zend_Object_Persistent
   
