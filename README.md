@@ -49,7 +49,7 @@ Once we separate configuration from use, we can easily test the Car with differe
 
 Zend_Di handles injections via the constructor or setters methods. In addition, the component allows the user to map out specifications for components and their dependencies in a configuration file and generate the objects based on that specification.
 
-### Assembling Objects Using Reflection
+**Assembling objects using reflection:**
 
 ```php
 <?php
@@ -70,7 +70,7 @@ $di->loadClass('Zend_Foo')->newInstance();
 $foo = $di->getComponent('Zend_Foo');
 ```
 
-### Assembling Objects Using a DI Container
+**Assembling objects using a container:**
 
 ```php
 <?php
@@ -95,7 +95,7 @@ $di->loadClass('Zend_Foo')
 	->newInstance();
 ```
 
-*Assembling Objects Using Configuration*
+**Assembling objects using configuration:**
 
 The configuration is typically set up in a different file. Each package can have its own configuration file: PHP, INI or XML file. The configuration file holds the components specifications and package dependencies. 
 
@@ -157,7 +157,7 @@ The two major flavors of Dependency Injection are Setter Injection (injection vi
 
 When a class is loaded, the constructor method is selected by default.
 
-### Inject a single dependency
+**Inject a single dependency:**
 
 ```php
 <?php
@@ -167,7 +167,7 @@ $di->loadClass('Foo')
 	->newInstance();
 ```
 
-### Inject multiple dependencies
+**Inject multiple dependencies:**
 
 ```php
 <?php
@@ -177,7 +177,7 @@ $di->loadClass('Foo')
 	->newInstance();
 ```
 
-### Inject dependencies and pass arguments
+**Inject dependencies and pass arguments:**
 
 ```php
 <?php
@@ -220,7 +220,7 @@ $di->loadClass('Foo')
 	->newInstance();
 ```
 
-## Setter dependency injection
+**Setter dependency injection:**
 
 ```php
 <?php
@@ -307,7 +307,7 @@ $di = new Zend_Di_Container();
 $di->getRegistry()->setStorage(new Zend_Di_Storage_Cache());
 ```
 
-## Real-life example
+## Example
 
 http://framework.zend.com/wiki/display/ZFPROP/Zend_Di+Example
 
