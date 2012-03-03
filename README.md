@@ -6,7 +6,7 @@ Zend_Di is a dependency injector component. It minimizes coupling between groups
 * The Container provides an easy way of re-configuring a package to use custom implementations of components.
 * Responsibility for object management is taken over by whatever container is being used to manage those objects.
 
-## References
+**References:**
 
 [Martin Fowler DI Pattern](http://www.martinfowler.com/articles/injection.html), [PicoContainer](http://picocontainer.org/), [NanoContainer](http://nanocontainer.codehaus.org/)
 
