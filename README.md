@@ -174,6 +174,7 @@ $di->loadClass('Foo')
 
 $di->loadClass('Foo')
 	->addComponent('ComponentA')
+	->addComponent('ComponentB')
 	->newInstance();
 ```
 
