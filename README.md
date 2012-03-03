@@ -6,16 +6,9 @@ Zend_Di is a dependency injector component. It minimizes coupling between groups
 * The Container provides an easy way of re-configuring a package to use custom implementations of components.
 * Responsibility for object management is taken over by whatever container is being used to manage those objects.
 
-### References
+## References
 
 [Martin Fowler DI Pattern](http://www.martinfowler.com/articles/injection.html), [PicoContainer](http://picocontainer.org/), [NanoContainer](http://nanocontainer.codehaus.org/)
-
-## Requirements
-
-This component **will** use Reflection to wire dependencies.
-This component **will** use Configuration to wire dependencies.
-This component **must** support PHP, XML and INI configuration files.
-This component **must** allow all components to be constructed using Zend_Config instances.
 
 ## Operation
 
@@ -52,27 +45,11 @@ $foo = $di->loadClass('Foo')->newInstance();
 
 Once we separate configuration from use, we can easily test the Car with different Engines. It's just a matter of re-configuring the package and injecting Zend_Car_Parts_Engine_Gas instead of Zend_Car_Parts_Engine_Fuel.
 
-## Package
-
-Zend_Di
-Zend_Di_Container 
-Zend_Di_Factory 
-Zend_Di_Reflection
-Zend_Di_Parameter
-Zend_Di_Data
-Zend_Di_Registry
-Zend_Di_Storage_Interface 
-Zend_Di_Storage_Object 
-Zend_Di_Storage_Exception 
-Zend_Di_Exception 
-
 ## Use cases
 
 Zend_Di handles injections via the constructor or setters methods. In addition, the component allows the user to map out specifications for components and their dependencies in a configuration file and generate the objects based on that specification.
 
-## Assembling Objects Using Reflection
-
-### Assembling objects using Zend_Di_Reflection
+### Assembling Objects Using Reflection
 
 ```php
 <?php
@@ -93,7 +70,7 @@ $di->loadClass('Zend_Foo')->newInstance();
 $foo = $di->getComponent('Zend_Foo');
 ```
 
-*Assembling objects using Zend_Di_Container*
+### Assembling Objects Using a DI Container
 
 ```php
 <?php
@@ -176,11 +153,11 @@ $foo = $di->loadClass('Foo')->newInstance();
 
 The two major flavors of Dependency Injection are Setter Injection (injection via setter methods) and Constructor Injection (injection via constructor arguments). Zend_Di provides support for both, and even allows you to mix the two when configuring the one object.
 
-### Constructor dependency injection
+## Constructor dependency injection
 
 When a class is loaded, the constructor method is selected by default.
 
-Inject a single dependency:
+### Inject a single dependency
 
 ```php
 <?php
@@ -190,7 +167,7 @@ $di->loadClass('Foo')
 	->newInstance();
 ```
 
-Inject multiple dependencies:
+### Inject multiple dependencies
 
 ```php
 <?php
@@ -200,7 +177,7 @@ $di->loadClass('Foo')
 	->newInstance();
 ```
 
-Inject dependencies and pass arguments:
+### Inject dependencies and pass arguments
 
 ```php
 <?php
@@ -243,7 +220,7 @@ $di->loadClass('Foo')
 	->newInstance();
 ```
 
-### Setter dependency injection
+## Setter dependency injection
 
 ```php
 <?php
