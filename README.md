@@ -221,7 +221,7 @@ $di->loadClass('Foo')
 	->newInstance();
 ```
 
-**Setter dependency injection:**
+## Setter dependency injection
 
 ```php
 <?php
