@@ -314,5 +314,6 @@ http://framework.zend.com/wiki/display/ZFPROP/Zend_Di+Example
 
 ## License
 
-Copyright (c) 2007, Federico Cargnelutti. All rights reserved. New BSD License http://www.opensource.org/licenses/bsd-license.php
+* Copyright (c) 2007, Federico Cargnelutti. All rights reserved. 
+* New BSD License http://www.opensource.org/licenses/bsd-license.php
 
