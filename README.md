@@ -70,7 +70,7 @@ $di->loadClass('Zend_Foo')->newInstance();
 $foo = $di->getComponent('Zend_Foo');
 ```
 
-**Assembling objects using a container:**
+**Assembling objects using a DI container:**
 
 ```php
 <?php
